@@ -44,7 +44,7 @@ class DeltaKinematics:
             for sconfig, rail in zip(stepper_configs, self.rails)]
 
         self.rotation_steps = None if any( (value == 0.)
-            for value in self.rotationrotation_steps) else self.rotation_steps
+            for value in self.rotation_steps) else self.rotation_steps
 
 
         self.arm2 = [arm**2 for arm in arm_lengths]
