@@ -42,7 +42,7 @@ class DeltaKinematics:
             (sconfig.getfloat('rotation_distance', 0.)
             / rail.get_steppers()[0].get_step_dist())
             for sconfig, rail in zip(stepper_configs, self.rails)]
-        
+
         self.rotation_steps = None if any( (value == 0.)
             for value in self.rotationrotation_steps) else self.rotation_steps
 
